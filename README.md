@@ -1,5 +1,5 @@
 # Learn Redash
-Learn how to use Redash to query and display your data in a dashboard.
+Learn how to use [Redash](https://redash.io/) to query and display your data in a dashboard.
 
 ## Why?
 Technical team members can easily access a project's data writing SQL queries in the command line however for non-technical team members this is not the case. Having access to a project's data is valuable. It allows you to analyse and evaluate users' behaviours in order to make informed decisions about what the project needs going forward.
