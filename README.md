@@ -46,7 +46,84 @@ Once you've written your query click 'Execute' and then wait until the results o
 
 ![image](https://user-images.githubusercontent.com/16775804/32286104-4d6d2210-bf24-11e7-9708-76c0bcbcfdad.png)
 
-In this example, as our query asked for the entire table, this is what our result shows. If you are happy with the query/results remember to click 'Save' so you can return to your query in the future! You can also see the option to download this content as a .csv or excel file on the right which is the option you may wish to select if choosing to share your data with your client in this way.
+In this example, as our query asked for the entire table, this is what our result shows. If you are happy with the query/results remember to click 'Save' so you can return to your query in the future! You can also see the option to download this content as a .csv or excel file on the right which is the option you may wish to select if choosing to share your data with your client in this way. If you want other team members to be able to see your query you should 'publish' it, then it will be visible to all users.
+
+If you don't yet know SQL and want to know how to write more queries take a look at the following section:
+
+### An introduction to SQL for writing queries
+
+:bangbang: NOTE: Any commands that use **the words UPDATE, DROP, ALTER, CREATE, INSERT or DELETE will make permanent changes to your data**, do not use them unless you have checked with your team that you are not using your site's live data. :bangbang:
+
+#### Select data from one table
+
+A query is a request you make to your database for some information. The most simple query you can run is one which displays data for you. So if your database had a table called 'People' that looked like this:
+
+**People**
+
+| User ID | Name     | Age | Occupation      |
+|---------|----------|-----|-----------------|
+| 1       | Amy      | 29  | Violinist       |
+| 2       | Bob      | 55  | Tree Surgeon    |
+| 3       | Clarissa | 42  | Physiotherapist |
+
+and you wanted to write a query that would display all of this data to you you would write:
+
+`SELECT * FROM people;`
+
+In this command you are selecting all of the data (the asterisk represents all values) from your table called 'People'. All SQL commands must end with a semi-colon to indicate that this is the end of your query.
+
+#### Select data from two tables
+
+In order to display data from two tables together you can do an inner join. So if I wanted to combine the values from the people table above with the pets table:
+
+| pet_id | pet_name | animal | owner_id |
+|--------|----------|--------|----------|
+| 9      | Fido     | Dog    | 1        |
+| 10     | Tiddles  | Cat    | 1        |
+| 11     | Spot     | Dog    | 2        |
+
+You would write:
+
+```
+SELECT * FROM people
+JOIN pets
+ON people.user_id = pets.owner_id;
+```
+
+An inner join will combine rows from different tables if the join condition is true. So joining the people and pets tables we would get a result like this:
+
+| user_id | name | age | occupation   | pet_id | pet_name | animal | owner_id |
+|---------|------|-----|--------------|--------|----------|--------|----------|
+| 1       | Amy  | 29  | Violinist    | 9      | Fido     | Dog    | 1        |
+| 1       | Amy  | 29  | Violinist    | 10     | Tiddles  | Cat    | 1        |
+| 2       | Bob  | 55  | Tree Surgeon | 11     | Spot     | Dog    | 2        |
+
+Notice how Amy appears twice because she has 2 pets whereas Clarissa no longer appears as she has no pets.
+
+#### Select one column of data
+
+If you just want to see one column of data run the following command:
+
+```
+SELECT people.name
+FROM people;
+```
+
+Which will give you:
+
+| Name |
+|------|
+| Amy  |
+| Amy  |
+| Bob  |
+
+#### Further Learning
+If you've got time to learn a bit more about SQL why not try:
+- The Codeacademy tutorial - https://www.codecademy.com/learn/learn-sql
+- Or this one from Mode - https://community.modeanalytics.com/sql/tutorial/introduction-to-sql/
+
+Here's a **glossary of terms** for those more familiar with SQL looking for a reminder: https://www.codecademy.com/articles/sql-commands?r=master
+
 
 ### Creating accounts for multiple users
 
