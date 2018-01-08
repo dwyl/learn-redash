@@ -48,6 +48,60 @@ Once you've written your query click 'Execute' and then wait until the results o
 
 In this example, as our query asked for the entire table, this is what our result shows. If you are happy with the query/results remember to click 'Save' so you can return to your query in the future! You can also see the option to download this content as a .csv or excel file on the right which is the option you may wish to select if choosing to share your data with your client in this way.
 
-### Creating accounts for multiple users
+### Setting up permissions for different users
 
-If your client would like to write their own queries then you can create an account for them to do so. It is possible to set up tiers of permissions so that you can restrict access in case certain users should be given read-only access. You can also use this restricted access to prevent certain users from seeing some parts of your dataset which may be confidential.
+Depending on which Redash package you are paying for you have the opportunity to set up multiple users. You can put users into groups to determine what access rights they should have either read only or full.
+
+#### Choosing read only or full access
+To amend the permissions of your users **start by going to** the settings page which can be accessed via the **cog in the top right navbar**:
+
+<img src="https://user-images.githubusercontent.com/16775804/34616592-a811597c-f230-11e7-85d6-e31f322d92ca.png" width=50px />
+
+From here **select the Groups tab**:
+
+![image](https://user-images.githubusercontent.com/16775804/34616777-19010984-f231-11e7-9bde-1bde42a88736.png)
+
+Automatically all users are part of the 'Default' group. **Select or create the group whose permissions you wish to set**. If you are creating a new group you will need to select from the dropdown the users you wish to add to the group.
+
+Then **select the data source** you wish to apply these permissions to (you may just have one):
+![image](https://user-images.githubusercontent.com/16775804/34616900-7889d25a-f231-11e7-9dff-8d32ddef19bb.png)
+
+Then select the permission level, you can **choose from either: full access or read-only**:
+
+<img src="https://user-images.githubusercontent.com/16775804/34616823-42f115cc-f231-11e7-9214-f20fd5f5e354.png" width=180px />
+
+#### Sharing data with external clients
+
+In some instances you may wish to share data with someone who is external to your company. Rather than setting up this user with an account you can either download and share your data or send them a shareable link. Here's how:
+
+##### Downloading data
+
+To download a query, select the query in your queries list and then click:
+<img src="https://user-images.githubusercontent.com/16775804/34619365-c62ff89c-f239-11e7-8f90-cf2ebabc5590.png" width=200px />
+
+ You also have this option when viewing queries in your dashboard:
+<img src="https://user-images.githubusercontent.com/16775804/34619428-010ca5a0-f23a-11e7-83d1-cdf382f71df4.png" width=180px />
+
+To download a visualization as an image file hover over the top right area of the visualization and click the camera icon. It will be downloaded to your device.
+
+##### Sending a shareable link
+
+If you wish to send a link to someone without an account add the queries you wish to share to a dashboard. You can do this using the ellipsis menu on your dashboard and then by selecting add widget:
+
+<img src="https://user-images.githubusercontent.com/16775804/34680821-fe7fda14-f491-11e7-942f-e03940ea758e.png" width=190px />
+
+Select the name of the query you wish to add and click 'Add to Dashboard':
+
+<img src="https://user-images.githubusercontent.com/16775804/34680934-4b22b260-f492-11e7-9357-7233ab33bc42.png" width=500px />
+
+
+Once you've added the queries you wish to share, on the dashboard page click the share icon:
+
+<img src="https://user-images.githubusercontent.com/16775804/34619587-8982e84a-f23a-11e7-93b5-20d487355410.png" width=200px />
+
+Then tick the checkbox to generate a shareable url:
+<img src="https://user-images.githubusercontent.com/16775804/34619613-a45f0e46-f23a-11e7-8294-e8b8bde4dfac.png" width=400px />
+
+If you want to make sure the external user has access to the latest live data you can set your dashboard up with a regular refresh. Click 'Refresh' to open a dropdown with options of how regularly to refresh the query on the dashboard.
+
+<img src="https://user-images.githubusercontent.com/16775804/34680585-6d08aa5c-f491-11e7-875b-8ae636bd3d77.png" width=180px />
