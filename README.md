@@ -21,10 +21,20 @@ to create these in Redash. They'll create dashboards for their clients and this
 also reduces the client team's dependence on developers.
 
 ## What?
-
-Redash is a paid for service that provides an online, up to date, queryable dashboard of a project's data. Prices start from $29 a month with a free 30 day trial, which is useful for those who may be using it as a stop-gap or want to test the waters of whether it will truly benefit them. To follow the instructions in this readme your project must be hosted on Heroku and using PostgreSQL.
-
 ## How?
+
+Your needs and interaction with Redash will vary according to your technical
+proficiency:
+
+- For basic view only access login and take a look either at your list of
+dashboards or queries from the main menu. Can't see anything? Ask your technical
+team to make sure they have 'published' the queries and dashboards they've
+created which will make them visible to you.
+
+- To learn how to write your own basic queries see
+[learning SQL](#an-introduction-to-sql-for-writing-queries).
+- As a developer looking to set up and configure Redash start by creating an
+account in the next section.
 
 ### Create an account
 
