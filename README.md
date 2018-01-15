@@ -6,6 +6,20 @@ Technical team members can easily access a project's data writing SQL queries in
 
 Dashboards are an appealing means of displaying a project's data in a user-friendly way. Whilst you can custom make a dashboard for your project this can be complex and time-consuming according to the needs of the client. Redash is a pre-made dashboard tool that is easy to connect to your data and offers a lot of inbuilt functionality to help solve these problems.
 
+### Real world examples
+
+- Building a new application and looking to gain a better understanding of
+user's behaviours. Redash proved a helpful and more detailed layer to complement
+Google Analytics and Tag Manager.
+- A platform with different user types where admins need the ability to query
+and search the data. Doing so will help the project management and give admins
+a better understanding of how the app is being used.
+- A client in need of a reporting tool. Rather than having to build a bevy of
+reports (ranging from simple to complex) into the core of their application,
+many of which would be used only by one client or as a one-off, they have chosen
+to create these in Redash. They'll create dashboards for their clients and this
+also reduces the client team's dependence on developers.
+
 ## What?
 
 Redash is a paid for service that provides an online, up to date, queryable dashboard of a project's data. Prices start from $29 a month with a free 30 day trial, which is useful for those who may be using it as a stop-gap or want to test the waters of whether it will truly benefit them. To follow the instructions in this readme your project must be hosted on Heroku and using PostgreSQL.
