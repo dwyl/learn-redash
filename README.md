@@ -281,3 +281,12 @@ you can set your dashboard up with a regular refresh. Click 'Refresh' to open a
 dropdown with options of how regularly to refresh the query on the dashboard.
 
 <img src="https://user-images.githubusercontent.com/16775804/34680585-6d08aa5c-f491-11e7-875b-8ae636bd3d77.png" width=180px />
+
+### Can I hide a field/column of my database on Redash?
+
+You may want to query your data but you have one column which contains sensitive
+data. Unfortunately it is not possible in Redash to hide or encrypt a portion of
+your data. However, if you do find yourself in this situation you can change how
+data is retrieved from a given table based on how you're selecting it. So you can
+choose only to select the columns you want so the sensitive fields are not
+included on Redash making all of your data suitable for querying.
