@@ -286,7 +286,7 @@ dropdown with options of how regularly to refresh the query on the dashboard.
 
 You may want to query your data but you have one column which contains sensitive
 data. Unfortunately it is not possible in Redash to hide or encrypt a portion of
-your data. However, if you do find yourself in this situation you can change how
-data is retrieved from a given table based on how you're selecting it. So you can
-choose only to select the columns you want so the sensitive fields are not
-included on Redash making all of your data suitable for querying.
+your data. The best way to achieve this would be to create a seperate view of
+your database. When you build that view only select the columns from each table
+that you wish to include rather than selecting 'all'. Then connect the view of
+your database up with Redash so the sensitive fields are no longer included.
